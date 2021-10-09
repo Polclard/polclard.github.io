@@ -1,0 +1,4 @@
+#FFFD98 //zolta
+#BDE4A7 //zelena
+#9FBBCC //sina
+#7A9CC6 //temnosina

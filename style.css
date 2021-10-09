@@ -1,84 +1,209 @@
-/*body{
-    Background-image: url('https://cdn.hipwallpaper.com/i/60/55/fN8BG5.jpg');
+*{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    color:  green
 }
-
-.form-container{
-    background-color: antiquewhite;
-    margin: auto;
-    top: 50%;
-    left: 50%;
-    width: 40%;
-    max-height: 100px;
-    height: 50%;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-    align-items: center;
-    margin-top: 300px; 
-    opacity: 0.8;
-}
-
-#email{
-    opacity: 1;
-}*/
 
 html{
     margin: 0;
+    padding: 0;
 }
 
-h1{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3em;
-    border-right: 1px solid blue;
-    border-bottom: 1px solid blue;
-    text-align: center;
-    width: 300px;
-    box-shadow: 4px 4px 5px blue;
-}
-
-.images-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.caption{
-
-    opacity: 1;
-    display: none;
-    clear: both;
-    transition: all 1s;
-}
-
-
-img{
-    width:300px;
-    height: 400px;
-    margin: 10px;
-    transition: all 1s;
-}
-
-
-img:hover{
-    transform: scale(1.1);
-}
-
-img:hover + .caption{
+.navbar-ul{
+    position: fixed;
     display: block;
-    opacity: 0.5;
-    
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    height: auto;
+    background-color: #BDE4A7;
+    margin-bottom: 0px;
+    border-bottom: solid green 2px;
+}
+.navbar-ul>li:hover{
+    transition: 0.4s;
+    transform:translateZ(5px);
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgba(29, 197, 99, 0.1);
+    text-shadow: 5px 10px 2px #56a12a;
+}
+.navbar-ul>li{
+   
+    text-align: center  ;
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    height: auto;
+    background-color: #BDE4A7;
+    display: none;
+    border-bottom: solid green 2px;
+
 }
 
-.btnst{
+.burger{
+    width: 100%;
+    padding-right: 10px;
+    user-select: none;
+    font-size: 35px;
+    padding-left: 5px;
+}
+.burger>li, .burger>a{
+    width: 100%;
+}
+
+li{
+
+    list-style-type: none;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+    height: 40px;
+    width: 100%;
+}
+
+.btn-clap{
+    text-align: center;
+    font-size: 50px;
+    background-color: #56a12a;
+    color: white;
     width: 150px;
-    height: 50px;
-    background-color: darkcyan;
-    color:aliceblue;
-    font-size: 1em;
-    transition: all 0.6s;
 }
 
-.btnst:hover{
-    background-color: aliceblue;
-    color:darkcyan;
+.btn-clap:hover{
+    transition: 0.7s;
+    background-color: white;
+    color: #56a12a;
+}
+
+.photo-poster{
+    padding-top: 14px;
+}
+.name-centered{
+    align-items: center;
+    display:block;
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-photo{
+    object-fit:cover;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 1000px;
+}
+
+.navbar-resp-resp>li>a{
+    width: 100%;  
+    padding: 0;
+    height:0;
+    margin: 0;
+}
+
+
+.navbar-resp-resp>li:hover{
+    cursor: pointer;
+    transition: 0.6s;
+    background-color:rgba(24, 161, 24, 0.4) ;
+}
+.navbar-resp-resp>li>a:hover{
+   
+    background-color: rgba(24, 161, 24, 0);
+    width: 100%;
+}
+
+.footer{
+    font-size: 20px;
+    height:42px ;
+    width:100%;
+    background-color: #BDE4A7;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.footer>p{
+    margin-right: 10px;
+    height: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer>p{
+    text-align: right;
+}
+
+.navbar-resp{
+    display: none;
+    position: fixed;
+}
+.navbar-resp-resp>li>a:hover{
+    display:inline;
+    width: 100%;
+}
+
+.navbar-resp-resp>a, li{
+    width: 100%;
+}
+
+.navbar-resp-resp{
+    transition: 0.6s;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color:#BDE4A7 ;
+    position: fixed;
+    margin-top: 42px;
+    box-shadow: 5px 10px 8px #56a12a;
+    border-top: solid green 1px;
+}
+
+.navbar-resp-resp:hover:li{
+    background-color: rgb(66, 109, 2);
+}
+
+.burger:hover{
+    cursor:pointer;
+    transition: 0.7s;
+    background-color: rgba(29, 197, 99, 0.5);
+}
+
+@media only screen and (max-width: 520px) {
+    .navbar-ul{
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+    
+    li, a{
+        width: 100%;
+        padding: 0;
+        margin:0;
+    }
+
+    .main-photo{
+        width: 100%;
+    height: auto;
+    max-height: 700px;
+    }
+    .navbar{
+        display: block;
+    }
+
 }
