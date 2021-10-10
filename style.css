@@ -19,6 +19,9 @@ html, body{
     background-image: url("");
   
 }
+.btn{
+    background-color: red;
+}
 
 .col-sm{
     padding:10px;
