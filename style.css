@@ -21,6 +21,7 @@ html, body{
 }
 .btn{
     background-color: red;
+    color: black !important;
 }
 
 .col-sm{
