@@ -11,6 +11,33 @@ html, body{
     transition: 0.2s;
 }
 
+
+
+.main-tit{
+    animation-iteration-count: infinite;
+    animation-name: mymove;
+    animation-duration: 3.4s;
+margin: 0;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+@keyframes mymove {
+    0% {
+        transform:translate(0, 20%);
+      }
+      
+    50%{
+        transform:translate(0, -20%);
+    }
+
+    100%{
+        transform:translate(0, 20%);
+    }
+
+}
+
+
 .carousel-control-prev-icon {
     background-image: url("");
 }
